@@ -1,0 +1,226 @@
+body {
+		margin: 0;
+		padding: 0;
+		font-size: 14px;
+		background-color:aliceblue;
+	}
+#container {
+		width: 80%;
+		margin: auto;
+	}
+header {
+	color: rgb(100, 237, 123);
+	font-weight: bold;
+}
+nav {
+	top: 2.5em;
+	width: 100%;
+	left: 0;
+	text-align: center;
+}
+
+nav ul {
+	display: inline-block;
+	font-size: 1em;
+	border-radius: 0.35em;
+	box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+	padding: 0 1.5em 0 1.5em;
+  
+}
+ 
+nav ul li {
+  	display:block;
+  	float: left;
+  	text-align: center;
+	padding: 0 2em 0 2em;
+ 
+}
+ 
+#line { 
+	border-bottom:thin solid rgba(255, 255, 255, 0.25);
+	}
+
+nav li ul { 
+  	display: none; 
+	background-color: #107c25;
+	opacity: 0.9;
+}
+ 
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 30px 5px 30px;
+  color: #ffffff;  
+  white-space: nowrap;
+  text-align:center;
+  letter-spacing: 0.25em;
+			height: 3em;
+			line-height: 3em;
+			-moz-transition: all .25s ease-in-out;
+			-webkit-transition: all .25s ease-in-out;
+			-o-transition: all .25s ease-in-out;
+			-ms-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out;
+			outline: 0;
+}
+ #current {
+	color:rgb(123, 255, 0);
+	font-weight:bold;
+}
+nav ul li a:hover { 
+	color:rgb(255, 238, 0);
+}
+ 
+nav li:hover ul {
+  display: block;
+  position: absolute;
+}
+ 
+nav li:hover li {
+ 	float: none;
+}
+ 
+nav ul li ul li a {
+    text-align:left;
+}
+ 
+article {
+	background-color: aliceblue;
+	margin: 0;
+}
+article > section {
+	
+	padding: 0 15% 0 15%;
+	
+}
+article  a:link, article a:visited {
+	text-decoration: none;
+	color: #363636;
+}
+article a:hover {
+	color: black;
+	text-decoration: underline;	
+}
+article h3 {
+	border-bottom: dotted 0.1em tomato;
+	color: tomato;
+	margin: 1.5em 0 2em 0;
+}
+article h4{
+	border-bottom: dotted 1px silver;
+	margin: 1em;
+	color: #33C;
+}
+#font12 {
+	font-size:12px;
+}
+#img {
+	float: left;
+	width: 100px;
+	margin: 5px 15px;
+}
+.pd { padding: 0 5px 0 5px;}
+
+article dl{
+	margin: 5px;
+	margin-left: 130px;
+	color: #363636;
+}
+article dt{
+	font-weight: bold;
+	color: midnightblue;
+	padding-top: 0.5em;
+}
+
+article dd{
+	padding-bottom: 1em;
+}
+#nav-border{
+	border-bottom: dotted 1px silver;
+	text-align:center;
+}
+#iframe-course{
+	width: 100%;
+	height: 700px;
+	border-style: none;	
+}
+footer {
+	clear:both;
+	background:#4B4B4B;	color:#FFFFFF;
+	min-height: 480px;
+}
+footer > section {
+	padding:1em 0 0.5em 3em;
+}
+footer > section > span {
+	display: inline-block;
+}
+
+footer > section > a > img {
+	width: 11em;
+}
+
+#right {
+	display: block;
+	float: right;
+	padding: 1em 10% 1em 0;				
+	width: 20%;
+}
+
+#left{
+	display: block;
+	padding: 2em 0 1em 15%;
+}
+	@media screen and (max-width:720px) {
+		section {width:95%; margin:5px;}
+		header > section {padding: 1em 0 1em 0;margin: 0;}
+		nav {text-align: left;padding: 0 5px 0 5px;}
+		nav ul {width: 80%;}
+		nav h2 {display:none;}
+		nav ul li {position: static;padding: 0;}
+		nav li ul {display: block;box-shadow:none;}
+		nav ul li ul li {display: list-item;}
+		nav ul li a {display: inline-block;font-size: small;}
+		nav li:hover ul {position: static;}
+		ul.topnav li:not(:first-child) {display: none;} 
+  		ul.topnav li.icon {
+    		float: right;
+			display: inline-block;
+			}
+		article > section {padding: 0 2% 0 3%; font-size: small;}
+		article > section > nav {padding: 0 2% 0 2%;}
+		article > section > h4 {padding-left: 0;margin-left: 0;}
+		article > section > dl {margin-left:0;}
+	    article > section > div{margin: 0 0.5em 0 0;font-size: 1.1em;display: block;}
+		#pic_r,#pic_l,#pic_home {width: 100%;}
+		article > section > div > table {width: 100%;}
+		article > section > div > img {margin-left: 0; width: 100%;}
+		
+		article > section > #img {width: 30%;}
+		article dl{float: inherit; margin-left: 0;}
+		
+		footer {min-height: 200px;}
+		footer > #right {display:none;}
+		footer > #left  {padding: 2em;}
+		footer > section > iframe {display: none;}
+		
+	}
+	
+	@media screen and (max-width:680px) {
+  		ul.topnav.responsive {position: relative;}
+  		ul.topnav.responsive li.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+	
+		  }
+		  ul.topnav.responsive li {
+			float: none;
+			display: inline;
+		  }
+		  ul.topnav.responsive li a {
+			display: block;
+			text-align: left;
+		  }
+		}
+	
